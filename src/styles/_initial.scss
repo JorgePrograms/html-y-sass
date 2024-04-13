@@ -1,0 +1,73 @@
+
+.container{
+    background-image: url('../images/bg-mobile.svg');
+    background-color: purple;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    height: 100vh;
+    block-size: cover;
+    overflow: hidden;
+    padding: 20px;
+    
+    &-main{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        @media (min-width: 540px){
+            display: flex;
+            flex-direction: row;
+        }
+        &__description{
+            
+            display: flex;
+            margin:0, auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: auto, 20px;
+
+            @media (min-width: 540px){
+                max-width: 40%;
+            }
+        }
+    }
+}
+.contenedor-imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen2{
+    width: 100%;
+    min-height: 200px;
+    min-width: 275px;
+    margin: 30px;
+    padding: 0, 40px;
+    @media (min-width:540px){
+        min-height: 450px;
+        max-width: 674px;
+     //   max-height: 473px;
+     max-height: 60%;
+    }
+
+}
+
+.h1-reduced{
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+
+.boton{
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+    background-color: orangered;
+        &:hover{
+            cursor: pointer;
+        }
+}
+

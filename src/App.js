@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './App.scss';
+import Declaracion from './componentes/Declaracion';
+import logo from './images/logo.svg'
+import logo2 from './images/illustration-mockups.svg';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<div className='container'>
+      <img className='hola' src={logo} alt='algo' />
+      <div className='container-main'>
+        <div class="contenedor-imagen">
+          <img className='imagen2' src={logo2} alt='algo2' />
+          </div>
+               <div className='container-main__description'>
+                 <div>
+                     <h1 className='h1-reduced'>Build The Community </h1>
+                    <h1 className='h1-reduced'>Your Fans Will Love</h1>
+                  </div>
+                    
+    
+                     <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+                     Create connections with your users as you engage in genuine discussion. </p>
+
+                      <button className='boton'>Register</button>
+                </div>
+       
+ 
+
+      </div>
+
+      </div>   {/*Cierre de container*/}
+    </div>   //Cierre de App
   );
 }
 
